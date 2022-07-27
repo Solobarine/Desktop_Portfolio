@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#btn-5').addEventListener('click', pop5);
 
   document.querySelector('#btn-6').addEventListener('click', pop6);
-  
+
   // Validation of Email
   const form = document.querySelector('#form');
   const email = document.querySelector('#email');
@@ -327,9 +327,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lowCase === input) {
       error.innerText = 'Thank you for Submitting';
       error.className = 'flash sucess';
-      () => form.submit();
+      form.submit();
       return true;
     }
+    return input;
   }
 
   form.addEventListener('submit', (e) => {
