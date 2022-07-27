@@ -51,7 +51,7 @@ header {
 
 .exit {
   grid-area: 1/12/span 1/span 1;
-  left: 600px;
+  left: 700px;
 }
 
 .enclose {
@@ -75,7 +75,7 @@ header {
 
 .short-summary {
   grid-area: 5/8/span 3/span 6;
-  font-size: 24px;
+  font-size: 44px;
 }
 
 .pop-button-l {
