@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function clear() {
       remove(n, rem);
     }
- 
+
     exit.addEventListener('click', clear);
     const a = pro.skillTag;
     const [b, c, d] = a;
