@@ -34,14 +34,14 @@ header {
   display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: #fff;
 }
 
 .featured-item {
   display: none;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 0.6fr, 0.4fr, 0.5fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 0.6fr, 0.4fr, 0.5fr, 1fr, 1fr, 1fr; /* Eslint-disable-line */
   grid-gap: 14px;
 }
 

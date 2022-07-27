@@ -65,16 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const text = document.querySelector('.short-summary');
   const live = document.querySelector('.pop-button-l');
   const source = document.querySelector('.pop-button-s');
-  const img1 = document.querySelector('.l-img')
-  const img2 = document.querySelector('.s-img')
 
-// Popup Window
+  // Popup Window
   const projectItems = [{
     title: 'Multi Post Stories',
     close: 'x',
     skillTag: ['html', 'Bootstrap', 'Ruby on Rails'],
     imgSrc: './image/portfolio-snapshot.png',
-  summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    summary: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     liveButton: 'See Live',
     liveImg: './image/live-img.png',
     sourceButton: 'See Source',
@@ -89,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     liveButton: 'See Live',
     liveImg: './image/live-img.png',
     sourceButton: 'See Source',
-    sourceImg: './img/github.png'
+    sourceImg: './img/github.png',
   },
   {
     title: 'Multi Post Stories',
@@ -100,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     liveButton: 'See Live',
     liveImg: './image/live-img.png',
     sourceButton: 'See Source',
-    sourceImg: './img/github.png'
+    sourceImg: './img/github.png',
   },
   {
     title: 'Too much Projects',
@@ -111,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     liveButton: 'See Live',
     liveImg: './image/live-img.png',
     sourceButton: 'See Source',
-    sourceImg: './img/github.png'
+    sourceImg: './img/github.png',
   },
   {
     title: 'Looking for more Projects?',
@@ -122,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     liveButton: 'See Live',
     liveImg: './image/live-img.png',
     sourceButton: 'See Source',
-    sourceImg: './img/github.png'
+    sourceImg: './img/github.png',
   },
   {
     title: 'Torture',
@@ -172,15 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
     imgSrc: '',
     summary: '',
     liveButton: '',
-    sourceButton: ''
-  },
-  {
-    title: '',
-    close: '',
-    skillTag: ['', '', ''],
-    imgSrc: '',
-    summary: '',
-    liveButton: '',
     sourceButton: '',
   },
   {
@@ -209,7 +198,16 @@ document.addEventListener('DOMContentLoaded', () => {
     summary: '',
     liveButton: '',
     sourceButton: '',
-  }
+  },
+  {
+    title: '',
+    close: '',
+    skillTag: ['', '', ''],
+    imgSrc: '',
+    summary: '',
+    liveButton: '',
+    sourceButton: '',
+  },
   ];
 
   function remove(g, array) {
@@ -229,15 +227,15 @@ document.addEventListener('DOMContentLoaded', () => {
     source.innerHTML = ject.sourceButton;
   }
 
-  function projects(n, arr){
-    let pro = arr[n];
+  function projects(n, arr) {
+    const pro = arr[n];
     heading.innerHTML = pro.title;
     exit.innerHTML = pro.close;
     function clear() {
-    remove(n, rem);
-  }
-  
-  exit.addEventListener('click', clear);
+      remove(n, rem);
+    }
+ 
+    exit.addEventListener('click', clear);
     const a = pro.skillTag;
     const [b, c, d] = a;
     html.innerHTML = b;
@@ -249,11 +247,11 @@ document.addEventListener('DOMContentLoaded', () => {
     source.innerHTML = pro.sourceButton;
   }
 
- function pop0() {
-   projects(0, projectItems);
-   content.style.display = 'grid';
-   grand.style.display = 'block';
- }
+  function pop0() {
+    projects(0, projectItems);
+    content.style.display = 'grid';
+    grand.style.display = 'block';
+  }
 
   function pop1() {
     projects(1, projectItems);
@@ -291,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     grand.style.display = 'block';
   }
 
-  document.querySelector('#btn-0').addEventListener('click',pop0);
+  document.querySelector('#btn-0').addEventListener('click', pop0);
 
   document.querySelector('#btn-1').addEventListener('click', pop1);
 
