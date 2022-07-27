@@ -302,4 +302,38 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#btn-5').addEventListener('click', pop5);
 
   document.querySelector('#btn-6').addEventListener('click', pop6);
+  
+  // Validation of Email
+  const form = document.querySelector('#form');
+  const email = document.querySelector('#email');
+  const error = document.querySelector('.error-message');
+
+  // Display Error or Sucess Message
+  function message(input) {
+    const lowCase = input.toLowerCase();
+    const regex = /@+./;
+
+    if (lowCase !== input) {
+      error.innerText = 'Email Should be in Lower Case';
+      error.className = 'flash error';
+      return false;
+    }
+
+    if (!regex.test(input)) {
+      error.innerText = 'Email should have @ and .';
+      error.className = 'flash error';
+    }
+
+    if (lowCase === input) {
+      error.innerText = 'Thank you for Submitting';
+      error.className = 'flash sucess';
+      () => form.submit();
+      return true;
+    }
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    message(email.value);
+  });
 });
