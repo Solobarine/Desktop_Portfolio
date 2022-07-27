@@ -29,13 +29,13 @@ header {
 }
 
 .show-inactive {
-    position: fixed;
-    z-index: 10;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #fff;
+  position: fixed;
+  z-index: 10;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
 }
 
 .featured-item {
@@ -97,7 +97,7 @@ header {
   background-color: #f55800;
   border-radius: 5px;
   height: 48px;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -982,8 +982,8 @@ header {
     height: 550px;
     background: #3c3a39;
   }
-  
-   .show-inactive {
+
+  .show-inactive {
     position: fixed;
     z-index: 100;
     display: none;
@@ -1075,6 +1075,5 @@ header {
     padding-top: 4px;
     color: #fff;
     font-size: 13px;
-    background-image: './image/github.png';
   }
 }
