@@ -55,7 +55,7 @@ header {
 }
 
 .enclose {
-  grid-area: 2/1/span 1/span 3;
+  grid-area: 2/1/span 1/span 5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -75,11 +75,11 @@ header {
 
 .short-summary {
   grid-area: 5/8/span 3/span 6;
-  font-size: 44px;
+  font-size: 16px;
 }
 
 .pop-button-l {
-  grid-area: 6/8/span 2/span 2;
+  grid-area: 7/8/span 1/span 2;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -90,7 +90,7 @@ header {
 }
 
 .pop-button-s {
-  grid-area: 6/10/span 2/span 2;
+  grid-area: 7/10/span 1/span 3;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
