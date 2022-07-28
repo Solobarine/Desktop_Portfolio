@@ -346,8 +346,8 @@ document.addEventListener('DOMContentLoaded', () => {
     name: '',
     mail: '',
     message: '',
-  }
-  
+  };
+
   function fillStorage() {
     storedValues.firstName = name.value;
     storedValues.mail = email.value;
@@ -385,5 +385,4 @@ document.addEventListener('DOMContentLoaded', () => {
   msg.addEventListener('input', () => {
     fillStorage();
   });
-
 });
