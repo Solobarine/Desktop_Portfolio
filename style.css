@@ -71,7 +71,7 @@ header {
   border: 1px solid #ccc;
   text-align: center;
   list-style: none;
-  font-family: 'Poppins', 15px;
+  font-family: 'Poppins', sans-serif; /* stylelint-disable-line */ 
   font-weight: 500;
   line-height: 20px;
 }
