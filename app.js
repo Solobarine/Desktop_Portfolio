@@ -369,11 +369,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Call setData and collectValues
+  // Call setData and collectValues.
   setData();
   collectValues();
 
-  // Create input event Handlers for Form fields
+  // Create input event Handlers for Form fields.
   name.addEventListener('input', () => {
     fillStorage();
   });
