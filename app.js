@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function fillStorage() {
-    storedValues.firstName = name.value;
+    storedValues.name = name.value;
     storedValues.mail = email.value;
     storedValues.message = msg.value;
     localStorage.setItem('data', JSON.stringify(storedValues));
