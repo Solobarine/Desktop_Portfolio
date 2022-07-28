@@ -337,4 +337,53 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     message(email.value);
   });
+
+  // Local Storage
+  const name = document.querySelector('#name');
+  const msg = document.querySelector('#msg');
+
+  const storedValues = {
+    name: '',
+    mail: '',
+    message: '',
+  }
+  
+  function fillStorage() {
+    storedValues.firstName = name.value;
+    storedValues.mail = email.value;
+    storedValues.message = msg.value;
+    localStorage.setItem('data', JSON.stringify(storedValues));
+  }
+
+  // Fill form with Stored values
+  function collectValues() {
+    const collect = JSON.parse(localStorage.getItem('data'));
+    name.value = collect.name;
+    email.value = collect.mail;
+    msg.value = collect.message;
+  }
+
+  function setData() {
+    if (localStorage.getItem('data') === null) {
+      localStorage.setItem('data', JSON.stringify(storedValues));
+    }
+  }
+
+  // Call setData and collectValues
+  setData();
+  collectValues();
+
+  // Create input event Handlers for Form fields
+  name.addEventListener('input', () => {
+    fillStorage();
+  });
+
+  email.addEventListener('input', () => {
+    fillStorage();
+  });
+
+  msg.addEventListener('input', () => {
+    fillStorage();
+  });
+
 });
