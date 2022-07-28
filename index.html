@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
+   <meta charset="UTF-8">
   <script src="https://kit.fontawesome.com/138cf4be1d.js" crossorigin="anonymous"></script>
-  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
@@ -49,7 +49,21 @@
     </section>
     <section id="work">
       <h2 id="work_title">My Recent Works</h2>
-
+      <div class="show-inactive">
+    <div class="featured-item" >
+      <h2 class="pop-title"></h2>
+      <a class="exit"></a>
+      <ul class="enclose">
+        <li class="pop-lists" id="l-1"></li>
+        <li class="pop-lists" id="l-2"></li>
+        <li class="pop-lists" id="l-3"></li>
+        </ul>
+      <img class="pro-image" src="." alt="Project Image"/>
+      <p class="short-summary"></p>
+      <a class="pop-button-l" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a class="pop-button-s" href="#"><i class="fa-brands fa-github-alt"></i></a>
+    </div>
+    </div>
       <div id="projects">
 
         <div id="frames">
@@ -62,7 +76,7 @@
             <span>Bootstrap</span>
             <span>Ruby</span>
           </div>
-          <div><button class="button mainp-see" type="button">See project</button></div>
+          <div><button id="btn-0" class="button mainp-see" type="button">See project</button></div>
         </div>
 
         <div id="grid">
@@ -75,7 +89,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button id="btn-1" class="button pro_button" type="button">See project</button>
           </div>
 
           <div class="pro_div" id="card2">
@@ -87,7 +101,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button id="btn-2" class="button pro_button" type="button">See project</button>
           </div>
 
           <div class="pro_div" id="card3">
@@ -99,7 +113,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button id="btn-3" class="button pro_button" type="button">See project</button>
           </div>
 
           <div class="pro_div" id="card4">
@@ -111,7 +125,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button id="btn-4" class="button pro_button" type="button">See project</button>
           </div>
 
           <div class="pro_div" id="card5">
@@ -123,7 +137,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button id="btn-5" class="button pro_button" type="button">See project</button>
           </div>
 
           <div class="pro_div" id="card6">
@@ -135,7 +149,7 @@
               <span>Bootstrap</span>
               <span>Ruby</span>
             </div>
-            <button class="button pro_button" type="button">See project</button>
+            <button id="btn-6" class="button pro_button" type="button">See project</button>
           </div>
         </div>
       </div>
@@ -183,7 +197,8 @@
       <p>I'm always interested in hearing about new projects, so if you'd like to chat please do get in touch!</p>
       <form id="form" action="https://formspree.io/f/xwkydlkr" method="post">
         <input name="user_name" id="name" type="text" placeholder="Enter your Name" maxlength="30" required />
-        <input name="user_email" id="email" type="email" placeholder="Enter your Email address" required />
+        <input name="user_email" id="email" type="email" placeholder="Enter your Email address" required>
+        <span class="error-message"></span>
         <textarea name="user_msg" id="msg" placeholder="Enter comments here" required maxlength="500"></textarea>
         <button class="button" type="submit">Get in touch</button>
       </form>
@@ -198,7 +213,7 @@
       </ul>
     </footer>
   </div>
-   <script src="app.js" type="text/javascript" charset="utf-8"></script>
+   <script src="app.js"></script>
 </body>
 
 </html>
