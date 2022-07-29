@@ -42,7 +42,7 @@ header {
 .featured-item {
   display: none;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 0.6fr, 0.4fr, 0.5fr, 1fr, 1fr, 1fr;  /* stylelint-disable-line */ 
+  grid-template-rows: 0.6fr, 0.4fr, 0.5fr, 1fr, 1fr, 1fr;  /* stylelint-disable-line */
   grid-gap: 14px;
 }
 
@@ -61,7 +61,7 @@ header {
 }
 
 .enclose {
-  grid-area: 2/1/span 1/span 5;
+  grid-area: 2/1/span 1/span 4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,9 +71,10 @@ header {
   border: 1px solid #ccc;
   text-align: center;
   list-style: none;
-  font-family: 'Poppins', sans-serif; /* stylelint-disable-line */ 
+  font-family: 'Poppins', sans-serif; /* stylelint-disable-line */
   font-weight: 500;
   line-height: 20px;
+  padding: 10px;
 }
 
 .pro-image {
@@ -88,6 +89,7 @@ header {
   font-weight: 400;
   line-height: 30px;
   grid-area: 5/9/span 3/span 6;
+  opacity: 0.7;
 }
 
 .pop-button-l {
@@ -1018,7 +1020,7 @@ header {
     width: 100%;
     height: 100%;
     display: none;
-    padding: 20px;
+    padding: 10px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 1fr);
     z-index: 1010;
@@ -1033,7 +1035,7 @@ header {
   }
 
   .exit {
-    grid-area: 1/6/span 1/span 1;
+    grid-area: 1/5/span 1/span 1;
     height: 15px;
     width: 15px;
     margin-left: 15px;
@@ -1042,32 +1044,31 @@ header {
   }
 
   .enclose {
-    grid-area: 2/1/span 1/span 5;
+    grid-area: 2/1/span 1/span 4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 25px;
-    margin-top: 10px;
-    padding-top: 5px;
   }
 
   .pop-lists {
     border: 1px solid #ccc;
     font-size: 12px;
+    text-align: center;
   }
 
   .pro-image {
-    grid-area: 3/1/span 3/span 6;
+    grid-area: 3/1/span 3/span 5;
     width: 100%;
     height: 100%;
   }
 
   .short-summary {
-    grid-area: 6/1/span 3/span 6;
+    grid-area: 6/1/span 3/span 5;
     width: 100%;
     height: 100%;
     font-size: 10px;
     margin-top: 10px;
+    line-height: 20px;
   }
 
   .pop-button-l {
@@ -1084,7 +1085,7 @@ header {
   }
 
   .pop-button-s {
-    grid-area: 9/4/span 1/span 3;
+    grid-area: 9/3/span 1/span 2;
     border-radius: 3px;
     border: 1px solid #000;
     background: #eb9508;
